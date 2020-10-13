@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+#particles-js{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url(./bgImg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.txtBox{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+
+.txtBox h2{
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.txtBox h2 span{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.txtBox h3{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;      
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.btn:hover{
+    border-radius: 0px;
+    transition: 0.5s ease;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Section Starts */
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBox{
+    padding-left: 30px;
+}
+
+.contentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+.img{
+    max-width: 100%;
+    height: 350px;
+    /* padding-left: 150px; */
+}
+
+/* About Section Ends */
+
+/* Services section starts */
+.services{
+    background: #111;
+}
+
+.heading{
+    padding-top: 30px;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .serviceBox{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .serviceBox:hover {
+    background: #2196f3;
+}
+
+.services .content .serviceBox img{
+    min-width: 80px;
+    filter: invert(1);
+}
+
+.services .content .serviceBox h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Services section ends */
+
+/* Contact section starts */
+.contact{
+    background: #111;
+}
+
+.formBox{
+    min-width: 60%;
+}
+
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3, .contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBox form input, .formBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBox form input::placeholder, .formBox form textarea::placeholder{
+    color: #999;
+}
+
+.formBox form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfoBox{
+    position: relative;
+}
+
+.contactinfoBox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactinfoBox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactinfoBox .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactinfoBox .box .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+/* Contact section ends */
+
+.copyright{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Code */
+@media (max-width:991px) {
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top: 68px;
+        left: -150%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top:1px solid rgba(0,0,0,0.2) ;
+    }
+
+    .menu.active {
+        left: 0;
+    } 
+
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(./menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        background: url(./close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 100px 50px;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5rem;
+    }
+
+    .banner h3{
+        font-size: 1rem;
+    }
+
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .contentBox h3{
+        font-size: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .w50{
+        margin-bottom: 20px;
+        padding-left: -70px;
+    }
+    .services .content .serviceBox{
+        margin: 10px;
+    }
+
+    .contactInfo{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:600px) {
+    header, header.sticky{
+        padding: 20px 20px;
+    }
+
+    .banner{
+        padding: 150px 20px 100px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+}

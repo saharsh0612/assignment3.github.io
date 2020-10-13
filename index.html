@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+        <section id="particles-js" class="banner">
+                <div class="txtBox">
+                    <h2>Hello, I am <br><span>Saharsh Sinha</span></h2>
+                    <h3>This is Assignment-3 and you can go to my original portfolio by clicking here</h3>
+                    <a href="#" class="btn" onclick="location.href='http://skgallery.tech'">About Me</a>
+                </div>   
+            </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="content">
+            <div class="contentBox">
+                <h3>I'm a Front End Web Developer </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta, odit tempora sint enim beatae!</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora rem commodi magni sint molestias consequuntur explicabo minima tenetur ipsam eos voluptatibus ullam reiciendis laudantium, ex voluptates deleniti harum architecto recusandae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae inventore similique voluptatem harum illum sed optio libero, sint id suscipit, iusto facilis! Maxime, eligendi consequatur? Atque est cum vitae incidunt modi a earum assumenda quo nesciunt sapiente dignissimos molestiae culpa adipisci, eaque minima tempora vel. Architecto, perspiciatis! Quis, laborum esse?</p>
+            </div>
+
+            <div class="w50">
+                <img src="./avatar.jpg" alt="no img found" class="img">
+            </div>
+
+        </div>
+    </section> 
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Services Offered</h2>
+        </div>
+
+        <div class="content">
+            <div class="serviceBox">
+                <img src="./service1.png">
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+
+            <div class="serviceBox">
+                <img src="./service2.png">
+                <h2>Video Editing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+
+            <div class="serviceBox">
+                <img src="./service3.png">
+                <h2>Content Writing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+
+            <div class="serviceBox">
+                <img src="./service4.png">
+                <h2>Photography</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+
+            <div class="serviceBox">
+                <img src="./service5.png">
+                <h2>Android App Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+
+            <div class="serviceBox">
+                <img src="./service6.png">
+                <h2>Website Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus magnam nemo ratione. Quasi, ex.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat.</p>
+        </div>
+
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactinfoBox">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>XYZ Colony, Patna, Bihar</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+91 0987654321</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>xyz@abc.com</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="formBox">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email Address">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy 2020 SK, All Rights Reserved</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+    </script>
+
+
+
+    <script src="./particles.js"></script>\
+    <script src="./particles.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
